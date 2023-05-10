@@ -11,9 +11,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(Include.NON_NULL)
-public class ProductDto {
+public class Errors {
 
-	private Long productId;
-	
-	private String productName;
+	private String errorStatus;
+	private Integer errorCode;
 }

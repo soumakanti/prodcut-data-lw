@@ -1,5 +1,7 @@
 package com.xoloti.product.allproductdata.dto;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
@@ -11,9 +13,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(Include.NON_NULL)
-public class ProductDto {
+public class ProductResponse {
 
-	private Long productId;
-	
-	private String productName;
+	private List<ProductDto> productList;
+	private Errors error;
 }
